@@ -1,0 +1,16 @@
+{
+  "name": "tasktimer",
+  "version": "1.0.0",
+  "description": "Times tasks, allows you to add metadata, and collects the task as a JSON string",
+  "main": "index.js",
+  "repository": "https://github.com/hoop33/tasktimer",
+  "author": "Rob Warner",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
