@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hoop33/tasktimer/compare/v1.0.0...v1.1.0) (2020-09-25)
+
+
+### Features
+
+* **ci:** add npm to semantic-release ([f39a34f](https://github.com/hoop33/tasktimer/commit/f39a34f25cbd5d897952da1541640b4ae6f7e464))
+
 # 1.0.0 (2020-09-25)
 
 
