@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hoop33/jobtimer/compare/v1.1.0...v1.2.0) (2020-09-25)
+
+
+### Features
+
+* add error message when end without start ([5e00842](https://github.com/hoop33/jobtimer/commit/5e008425b0f8aef34ca1a260d33b272af4298647))
+
 # [1.1.0](https://github.com/hoop33/tasktimer/compare/v1.0.0...v1.1.0) (2020-09-25)
 
 
