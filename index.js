@@ -11,7 +11,7 @@ exports.startTimedJob = (options) => {
 
 exports.endTimedJob = (job) => {
   const end = process.hrtime.bigint();
-  job = job || { msg: "end without start", end };
+  job = job || { msg: "error: end without start", end };
   const tpt = job.start
     ? Number(end - job.start) / NANOSECONDS_PER_MILLISECOND
     : 0;
