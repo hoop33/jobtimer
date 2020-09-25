@@ -1,6 +1,6 @@
 {
   "name": "tasktimer",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Times tasks, allows you to add metadata, and collects the task as a JSON string",
   "main": "index.js",
   "repository": "https://github.com/hoop33/tasktimer",
@@ -8,9 +8,35 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "semantic-release": "^17.1.2"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "docs/CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   }
 }
