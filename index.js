@@ -2,23 +2,23 @@
 
 const NANOSECONDS_PER_MILLISECOND = 1000000;
 
-exports.startTimedTask = (options) => {
+exports.startTimedJob = (options) => {
   return {
     ...options,
     start: process.hrtime.bigint(),
   };
 };
 
-exports.endTimedTask = (task) => {
+exports.endTimedJob = (job) => {
   const end = process.hrtime.bigint();
-  task = task || { msg: "end without start", end };
-  const tpt = task.start
-    ? Number(end - task.start) / NANOSECONDS_PER_MILLISECOND
+  job = job || { msg: "end without start", end };
+  const tpt = job.start
+    ? Number(end - job.start) / NANOSECONDS_PER_MILLISECOND
     : 0;
-  delete task.start;
+  delete job.start;
   return JSON.stringify(
     {
-      ...task,
+      ...job,
       tpt,
     },
     (_, value) => (typeof value === "bigint" ? value.toString() : value)

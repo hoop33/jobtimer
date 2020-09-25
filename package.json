@@ -1,9 +1,9 @@
 {
-  "name": "tasktimer",
+  "name": "jobtimer",
   "version": "0.0.0-development",
-  "description": "Times tasks, allows you to add metadata, and collects the task as a JSON string",
+  "description": "Times jobs, allows you to add metadata, and collects the job as a JSON string",
   "main": "index.js",
-  "repository": "https://github.com/hoop33/tasktimer",
+  "repository": "https://github.com/hoop33/jobtimer",
   "author": "Rob Warner",
   "license": "MIT",
   "private": false,
