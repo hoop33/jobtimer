@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/hoop33/jobtimer/compare/v1.2.0...v1.3.0) (2020-10-01)
+
+
+### Features
+
+* **ci:** add code scanning ([16a7159](https://github.com/hoop33/jobtimer/commit/16a71594d5f98dccc1bd66d0f3c2a14d3390807c))
+
 # [1.2.0](https://github.com/hoop33/jobtimer/compare/v1.1.0...v1.2.0) (2020-09-25)
 
 
